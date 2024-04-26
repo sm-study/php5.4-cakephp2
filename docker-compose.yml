@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  tokachigawa-php:
+    build: ./docker/php
+    volumes:
+      - ./public_html:/var/www/html
+    ports:
+      - "8000:80"
